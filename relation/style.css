@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+.list li::before {
+    content: '.';
+}
+
+.list li::not(:first-of-type) {
+    margin-top: 30px;
+}
