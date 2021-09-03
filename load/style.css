@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.loading { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+@keyframes flashing {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.loadingText {
+    animation: .5s flashing infinite;
+}

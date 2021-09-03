@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+}
+
+a { 
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+}
