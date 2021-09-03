@@ -25,6 +25,15 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.loading.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 @keyframes flashing {
